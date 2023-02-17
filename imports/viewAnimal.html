@@ -1,0 +1,30 @@
+<template name="viewAnimal">
+    <div class="modal modal-lg" tabindex="-1" id="viewModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Animal Encyclopedia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input type="hidden" class="editID">
+                    </div>
+                    <div class="col-lg-4">
+                      <img id="viewPro" class="w-100" src="" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="fs-1" id="viewName"></p>
+                      <p class="fs-3" id="viewSpecies"></p>
+                      <p class="fs-5" id="viewDescription"></p>
+                      <i class="bi bi-file-earmark-x js-delete"></i>
+                      <button class="btn btn-primary js-editModal">Edit Animal</button>
+                      
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</template>
